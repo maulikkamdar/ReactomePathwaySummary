@@ -1,4 +1,4 @@
-Problems you might run into : The layout visualization should run fine just after deploying it on the Server. There might be some lag experienced for the first time the pathway information is fetched out. This is later cached till further update, or on closing the browser.
+Problems you might run into : The layout visualization should run fine just after building and deploying it on the Server. There might be some lag experienced for the first time the pathway information is fetched out. This is later cached till further update, or on closing the browser.
 For expression analysis however you will need to deploy the latest copy of the Reactome Website and update the databases for release 40.
 
 cvs update -d
