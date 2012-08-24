@@ -1,0 +1,26 @@
+Problems you might run into : The layout visualization should run fine just after deploying it on the Server. There might be some lag experienced for the first time the pathway information is fetched out. This is later cached till further update, or on closing the browser.
+For expression analysis however you will need to deploy the latest copy of the Reactome Website and update the databases for release 40.
+
+cvs update -d
+ in ../GKB/ReactomeGWT
+and wget
+http://reactomedev.oicr.on.ca/download/test_reactome_40.dump.gz
+http://reactomedev.oicr.on.ca/download/test_reactome_40_dn.dump.gz
+
+The remaining steps for deploying the Reactome website is the same as mentioned on the website http://wiki.reactome.org/index.php/Website_Installing_SOP
+
+Documentation
+The Java Doc Documentation is available under the same folder in /docs
+The user guide to the Reactome Pathway Summary Application is shared using Google Document http://maulik-kamdar.com/2012/07/reactome-pathway-summary-browser/
+
+As most of my work requires integration with the Reactome website, I have not deployed it anywhere currently. I can deploy the visualization part if need arises.
+
+Synopsis & Future Work:
+
+    The Reactome Pathway information has been summarized and can be visualized in 4 different layouts provided to the user, each representing a different aspect of the summary. The data is fetched from the Reactome REST API. Some key aspects that can be visualized is the total number of pathway participants in any top-level pathway, hierarchy of the pathways to the first-level, similarity between any two pathways.
+    Expression Analysis can be carried from this application, and instead of the results being displayed in the standard tabular format, the expression levels are mapped to a Color value using a blue-yellow color scale (to facilitate users with red-green color blindness) The pathways depicting the expression, are colored accordingly (explained in the user document)
+    The application has been tested against Chrome and Firefox on both Linux and Windows system.
+    Some future work involves enabling the file upload for expression analysis, and improving the fourth layout on hierarchy. The interpretation is still not clear.
+
+
+
