@@ -1,0 +1,2 @@
+serviceClass: org.reactome.summary.client.QueryService
+path: 1F4BCD25AC03932B9E055625DC2DDFC3.gwt.rpc
