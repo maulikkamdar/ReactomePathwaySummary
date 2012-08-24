@@ -1,0 +1,5 @@
+org.reactome.summary.client
+org.reactome.summary.client.layout
+org.reactome.summary.client.view
+org.reactome.summary.server
+org.reactome.summary.shared
